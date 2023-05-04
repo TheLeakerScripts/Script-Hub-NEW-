@@ -1,0 +1,132 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "ScriptHub", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
+
+OrionLib:MakeNotification({
+	Name = "Tip",
+	Content = "go to others then you have keyboard to activate the auto bot fight and inf yiel for antikick",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+OrionLib:MakeNotification({
+	Name = "Hey",
+	Content = "Subscribe to this channel [Credits:aks script hub",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+local Tab = Window:MakeTab({
+	Name = "Sword Fight Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Auto Fight Press X",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/yeerma/1/main/bot'))()
+   	print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Reach",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/tsbVWZdP"))()
+      		print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Others",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Keyboard",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+     	print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Infinite yiel",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+           print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Vape v4 bedwars",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "bedwars vape v4 [KEYBOARD REQUIRED FOR MOBILE",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+            print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "BreakingPoint",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "BreakingPoint1",
+	Callback = function()
+      	getgenv().AutoFarm = true
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Breaking-Point'))()
+            print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Breakingpoint 2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7NHacks/Obfuscated/master/Breaking%20Point%20H4R7N%20Hack.lua"))()
+            print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "(brookhaven) Icehub",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "IceHub",
+	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+            print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Dupe/fates Admin",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Dupe script (limited times 9qn require in bank)",
+	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/echofluff/limited-time/main/DuperHub"))()
+            print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "fates admin [any game FE]",
+	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+            print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Chat bypass [say fuck it will do it for u]FE can get u banned",
+	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/synnyyy/synergy/additional/betterbypasser",true))()
+            print("button pressed")
+  	end    
+})
+
+OrionLib:Init()
